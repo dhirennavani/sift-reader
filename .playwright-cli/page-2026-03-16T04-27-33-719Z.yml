@@ -1,0 +1,134 @@
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Home
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - generic [ref=e25]: Continue reading
+        - generic [ref=e31]:
+          - generic [ref=e32] [cursor=pointer]:
+            - generic [ref=e35]: In defense of not reading the code
+            - generic [ref=e36]: Ben Shoemaker
+          - generic [ref=e37] [cursor=pointer]:
+            - generic [ref=e40]: "Thread: Why most developer tools fail"
+            - generic [ref=e41]: Boris Cherny
+          - generic [ref=e42] [cursor=pointer]:
+            - generic [ref=e45]: "The Software Shakeout: What Is Durable and What Will Be Swept Away?"
+            - generic [ref=e46]: Dan Hockenmaier
+          - generic [ref=e47] [cursor=pointer]:
+            - generic [ref=e50]: Application-Centric AI Evals For Engineers and Technical PMs
+            - generic [ref=e51]: Shreya Shankar
+          - generic [ref=e52] [cursor=pointer]:
+            - generic [ref=e55]: Attention Is All You Need - Transformer Architecture
+            - generic [ref=e56]: Vaswani et al.
+      - generic [ref=e57]:
+        - generic [ref=e59]:
+          - img [ref=e60]
+          - generic [ref=e64]: Continue listening
+        - generic [ref=e69]:
+          - generic [ref=e70] [cursor=pointer]:
+            - generic [ref=e73]: "Head of Claude Code: What happens after coding is solved?"
+            - generic [ref=e74]: Lenny's Podcast
+          - generic [ref=e75] [cursor=pointer]:
+            - generic [ref=e78]: "Sam Altman: OpenAI, GPT-5, Superintelligence"
+            - generic [ref=e79]: Lex Fridman Podcast
+          - generic [ref=e80] [cursor=pointer]:
+            - generic [ref=e83]: "Conviction vs. Permission: Why Most Founders Stay Broke"
+            - generic [ref=e84]: My First Million
+          - generic [ref=e85] [cursor=pointer]:
+            - generic [ref=e88]: AI and the Future of Enterprise Software
+            - generic [ref=e89]: a16z Podcast
+          - generic [ref=e90] [cursor=pointer]:
+            - generic [ref=e93]: "Inside the AI arms race: who is winning?"
+            - generic [ref=e94]: Hard Fork
+          - generic [ref=e95] [cursor=pointer]:
+            - generic [ref=e98]: "Shorts: When the Salmon Came Back"
+            - generic [ref=e99]: Radiolab
+          - generic [ref=e100] [cursor=pointer]:
+            - generic [ref=e103]: Tools for Managing Stress & Anxiety
+            - generic [ref=e104]: Huberman Lab
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - img [ref=e181] [cursor=pointer]
+        - generic [ref=e183]: Now Playing
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - generic [ref=e189]: "Head of Claude Code: What happens after coding is solved?"
+          - generic [ref=e190]: Lenny's Podcast
+        - generic [ref=e191]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: 24:00
+            - generic [ref=e196]: 54 min
+          - generic [ref=e197]:
+            - generic [ref=e198] [cursor=pointer]:
+              - img [ref=e199]
+              - generic [ref=e201]: "15"
+            - img [ref=e203] [cursor=pointer]
+            - generic [ref=e205] [cursor=pointer]:
+              - img [ref=e206]
+              - generic [ref=e208]: "15"
+        - generic [ref=e209]:
+          - generic [ref=e210]: Transcript
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]: 00:00
+            - generic [ref=e213]: Welcome back to the show. Today I'm sitting down with someone who's been at the center of one of the most interesting shifts in software engineering.
+          - generic [ref=e214] [cursor=pointer]:
+            - generic [ref=e215]: 00:42
+            - generic [ref=e216]: So let's start with the big question — what happens when coding itself becomes solved? What does the job of a software engineer look like?
+          - generic [ref=e217] [cursor=pointer]:
+            - generic [ref=e218]: 01:15
+            - generic [ref=e219]: "That's the question we think about every day. I think the honest answer is: we don't fully know. But I can tell you what we're seeing."
+          - generic [ref=e220] [cursor=pointer]:
+            - generic [ref=e221]: 02:03
+            - generic [ref=e222]: Engineers are spending less time on the mechanics of writing code and more time on understanding problems deeply. The skill shifts from syntax to systems thinking.
+          - generic [ref=e223] [cursor=pointer]:
+            - generic [ref=e224]: 02:48
+            - generic [ref=e225]: That's fascinating. So it's not that engineers become irrelevant — they become more important but in a different way?
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: 03:30
+            - generic [ref=e228]: Exactly. The most important thing is to ship something that works. You can always iterate later. But you need to understand the problem well enough to know what 'works' means.
+          - generic [ref=e229] [cursor=pointer]:
+            - generic [ref=e230]: 04:15
+            - generic [ref=e231]: How do you think about the build vs buy decision now? With AI making building easier, does the calculus change?
+          - generic [ref=e232] [cursor=pointer]:
+            - generic [ref=e233]: 05:02
+            - generic [ref=e234]: It changes dramatically. The cost of building has dropped so much that the bar for buying is much higher now. You need a really compelling reason to take on a dependency.
+          - generic [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: 05:45
+            - generic [ref=e237]: We've found that the best approach is to start simple, ship fast, and let real usage tell you where to invest. Most of the time, the features you think matter don't.
+          - generic [ref=e238] [cursor=pointer]:
+            - generic [ref=e239]: 06:30
+            - generic [ref=e240]: What advice would you give to someone just starting their career in software engineering today?
+          - generic [ref=e241] [cursor=pointer]:
+            - generic [ref=e242]: 07:15
+            - generic [ref=e243]: Focus on understanding problems, not just solutions. Learn to communicate clearly. And most importantly, build things — the best way to learn is by doing.
+          - generic [ref=e244] [cursor=pointer]:
+            - generic [ref=e245]: 08:00
+            - generic [ref=e246]: I think curiosity is the most underrated skill. The engineers who thrive are the ones who ask 'why' relentlessly and aren't satisfied with surface-level answers.
+  - tablist [ref=e107]:
+    - tab "Home" [selected] [ref=e109] [cursor=pointer]:
+      - generic [ref=e110]:
+        - img [ref=e112]
+        - img [ref=e115]
+      - generic [ref=e117]: Home
+    - tab "Library" [ref=e119] [cursor=pointer]:
+      - generic [ref=e120]:
+        - img [ref=e122]
+        - img [ref=e126]
+      - generic [ref=e129]: Library
+    - tab "Feed" [ref=e131] [cursor=pointer]:
+      - generic [ref=e132]:
+        - img [ref=e134]
+        - img [ref=e139]
+      - generic [ref=e143]: Feed
+    - tab "Podcasts" [ref=e145] [cursor=pointer]:
+      - generic [ref=e146]:
+        - img [ref=e148]
+        - img [ref=e153]
+      - generic [ref=e157]: Podcasts
+    - tab "Account" [ref=e159] [cursor=pointer]:
+      - generic [ref=e160]:
+        - img [ref=e162]
+        - img [ref=e166]
+      - generic [ref=e169]: Account

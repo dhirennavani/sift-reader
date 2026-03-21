@@ -1,0 +1,145 @@
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Home
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - generic [ref=e25]: Continue reading
+        - generic [ref=e31]:
+          - generic [ref=e32] [cursor=pointer]:
+            - generic [ref=e35]: In defense of not reading the code
+            - generic [ref=e36]: Ben Shoemaker
+          - generic [ref=e37] [cursor=pointer]:
+            - generic [ref=e40]: "Thread: Why most developer tools fail"
+            - generic [ref=e41]: Boris Cherny
+          - generic [ref=e42] [cursor=pointer]:
+            - generic [ref=e45]: "The Software Shakeout: What Is Durable and What Will Be Swept Away?"
+            - generic [ref=e46]: Dan Hockenmaier
+          - generic [ref=e47] [cursor=pointer]:
+            - generic [ref=e50]: Application-Centric AI Evals For Engineers and Technical PMs
+            - generic [ref=e51]: Shreya Shankar
+          - generic [ref=e52] [cursor=pointer]:
+            - generic [ref=e55]: Attention Is All You Need - Transformer Architecture
+            - generic [ref=e56]: Vaswani et al.
+      - generic [ref=e57]:
+        - generic [ref=e59]:
+          - img [ref=e60]
+          - generic [ref=e64]: Continue listening
+        - generic [ref=e69]:
+          - generic [ref=e70] [cursor=pointer]:
+            - generic [ref=e73]: "Head of Claude Code: What happens after coding is solved?"
+            - generic [ref=e74]: Lenny's Podcast
+          - generic [ref=e75] [cursor=pointer]:
+            - generic [ref=e78]: "Sam Altman: OpenAI, GPT-5, Superintelligence"
+            - generic [ref=e79]: Lex Fridman Podcast
+          - generic [ref=e80] [cursor=pointer]:
+            - generic [ref=e83]: "Conviction vs. Permission: Why Most Founders Stay Broke"
+            - generic [ref=e84]: My First Million
+          - generic [ref=e85] [cursor=pointer]:
+            - generic [ref=e88]: AI and the Future of Enterprise Software
+            - generic [ref=e89]: a16z Podcast
+          - generic [ref=e90] [cursor=pointer]:
+            - generic [ref=e93]: "Inside the AI arms race: who is winning?"
+            - generic [ref=e94]: Hard Fork
+    - generic [ref=e482]:
+      - generic [ref=e483]:
+        - generic [ref=e484]: In defense of not reading the code
+        - generic [ref=e485]: Ben Shoemaker · benshoemaker.us · Mar 10, 2026
+      - generic [ref=e487] [cursor=pointer]: There is a pervasive belief in software engineering that reading code is an essential skill. We are told that great engineers read code voraciously, that understanding a codebase requires reading every line, and that code review means carefully parsing each diff.
+      - generic [ref=e489] [cursor=pointer]: I want to push back on this idea. Not because reading code is unimportant, but because we have elevated it to a status it does not deserve. Reading code is a tool, not a virtue.
+      - generic [ref=e491] [cursor=pointer]: The best engineers I have worked with do not read code line by line. They build mental models. They understand systems at the architectural level first, then dive into specifics only when needed. They ask questions before they read. They form hypotheses and test them.
+      - generic [ref=e493] [cursor=pointer]: "When you sit down to understand a new codebase, resist the urge to start reading from the top of main.ts. Instead, ask yourself: what does this system do? What are its inputs and outputs? What are the key abstractions?"
+      - generic [ref=e495] [cursor=pointer]: Once you have a mental model, reading code becomes targeted. You know where to look. You know what matters and what is incidental complexity. You can skip the boilerplate and focus on the interesting parts.
+      - generic [ref=e497] [cursor=pointer]: This approach is not just more efficient — it leads to deeper understanding. When you read code with a model in mind, you notice when reality diverges from your expectations. Those divergences are where the bugs live, where the design decisions matter.
+    - generic [ref=e354]:
+      - generic [ref=e355]:
+        - img [ref=e357] [cursor=pointer]
+        - generic [ref=e358]: Unseen 6
+        - generic [ref=e359]:
+          - img [ref=e361] [cursor=pointer]
+          - img [ref=e363] [cursor=pointer]
+      - generic [ref=e368]:
+        - generic [ref=e369] [cursor=pointer]:
+          - generic [ref=e370]:
+            - generic [ref=e373]: DSMITH
+            - img [ref=e375]
+          - generic [ref=e379]: "Show HN: I built a tool to generate API docs from code"
+          - generic [ref=e380]:
+            - generic [ref=e381]: 2h
+            - generic [ref=e383]: github.com
+            - generic [ref=e385]: Hacker News - Top
+        - generic [ref=e386] [cursor=pointer]:
+          - generic [ref=e387]:
+            - generic [ref=e390]: DRH
+            - img [ref=e392]
+          - generic [ref=e396]: Why SQLite is so fast (2024)
+          - generic [ref=e397]:
+            - generic [ref=e398]: 4h
+            - generic [ref=e400]: sqlite.org
+            - generic [ref=e402]: Hacker News - Top
+        - generic [ref=e403] [cursor=pointer]:
+          - generic [ref=e404]:
+            - generic [ref=e407]: KATE CLARK
+            - img [ref=e409]
+          - generic [ref=e413]: AI startup raises $200M to build next-gen coding tools
+          - generic [ref=e414]:
+            - generic [ref=e415]: 1h
+            - generic [ref=e417]: techcrunch.com
+            - generic [ref=e419]: TechCrunch
+        - generic [ref=e420] [cursor=pointer]:
+          - generic [ref=e421]:
+            - generic [ref=e424]: BRIAN HEATER
+            - img [ref=e426]
+          - generic [ref=e430]: Apple announces new developer tools at WWDC
+          - generic [ref=e431]:
+            - generic [ref=e432]: 3h
+            - generic [ref=e434]: techcrunch.com
+            - generic [ref=e436]: TechCrunch
+        - generic [ref=e437] [cursor=pointer]:
+          - generic [ref=e438]:
+            - generic [ref=e441]: NETFLIX ENG
+            - img [ref=e443]
+          - generic [ref=e447]: How we scaled our recommendation engine to 300M users
+          - generic [ref=e448]:
+            - generic [ref=e449]: 1d
+            - generic [ref=e451]: netflixtechblog.com
+            - generic [ref=e453]: Netflix Tech Blog
+        - generic [ref=e454] [cursor=pointer]:
+          - generic [ref=e455]:
+            - generic [ref=e458]: GERGELY OROSZ
+            - img [ref=e460]
+          - generic [ref=e464]: "Inside the AI hiring boom: what companies actually look for"
+          - generic [ref=e465]:
+            - generic [ref=e466]: 8h
+            - generic [ref=e468]: pragmaticengineer.com
+            - generic [ref=e470]: The Pragmatic Engineer
+      - generic [ref=e472]:
+        - generic [ref=e474] [cursor=pointer]: Unseen
+        - generic [ref=e476] [cursor=pointer]: Seen
+  - tablist [ref=e97]:
+    - tab "Home" [ref=e99] [cursor=pointer]:
+      - generic [ref=e100]:
+        - img [ref=e102]
+        - img [ref=e105]
+      - generic [ref=e107]: Home
+    - tab "Library" [selected] [ref=e109] [cursor=pointer]:
+      - generic [ref=e110]:
+        - img [ref=e112]
+        - img [ref=e116]
+      - generic [ref=e119]: Library
+    - tab "Feed" [ref=e121] [cursor=pointer]:
+      - generic [ref=e122]:
+        - img [ref=e124]
+        - img [ref=e129]
+      - generic [ref=e133]: Feed
+    - tab "Podcasts" [ref=e135] [cursor=pointer]:
+      - generic [ref=e136]:
+        - img [ref=e138]
+        - img [ref=e143]
+      - generic [ref=e147]: Podcasts
+    - tab "Account" [ref=e149] [cursor=pointer]:
+      - generic [ref=e150]:
+        - img [ref=e152]
+        - img [ref=e156]
+      - generic [ref=e159]: Account

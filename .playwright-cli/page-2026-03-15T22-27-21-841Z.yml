@@ -1,0 +1,69 @@
+- generic [ref=e8]:
+  - generic [ref=e14]:
+    - generic [ref=e15]: Home
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - img [ref=e20]
+        - generic [ref=e25]: Continue reading
+      - generic [ref=e31]:
+        - generic [ref=e32] [cursor=pointer]:
+          - generic [ref=e35]: In defense of not reading the code
+          - generic [ref=e36]: Ben Shoemaker
+        - generic [ref=e37] [cursor=pointer]:
+          - generic [ref=e40]: "Thread: Why most developer tools fail"
+          - generic [ref=e41]: Boris Cherny
+        - generic [ref=e42] [cursor=pointer]:
+          - generic [ref=e45]: "The Software Shakeout: What Is Durable and What Will Be Swept Away?"
+          - generic [ref=e46]: Dan Hockenmaier
+        - generic [ref=e47] [cursor=pointer]:
+          - generic [ref=e50]: Application-Centric AI Evals For Engineers and Technical PMs
+          - generic [ref=e51]: Shreya Shankar
+        - generic [ref=e52] [cursor=pointer]:
+          - generic [ref=e55]: Attention Is All You Need - Transformer Architecture
+          - generic [ref=e56]: Vaswani et al.
+    - generic [ref=e57]:
+      - generic [ref=e59]:
+        - img [ref=e60]
+        - generic [ref=e64]: Continue listening
+      - generic [ref=e69]:
+        - generic [ref=e70] [cursor=pointer]:
+          - generic [ref=e73]: "Head of Claude Code: What happens after coding is solved?"
+          - generic [ref=e74]: Lenny's Podcast
+        - generic [ref=e75] [cursor=pointer]:
+          - generic [ref=e78]: "Sam Altman: OpenAI, GPT-5, Superintelligence"
+          - generic [ref=e79]: Lex Fridman Podcast
+        - generic [ref=e80] [cursor=pointer]:
+          - generic [ref=e83]: "Conviction vs. Permission: Why Most Founders Stay Broke"
+          - generic [ref=e84]: My First Million
+        - generic [ref=e85] [cursor=pointer]:
+          - generic [ref=e88]: AI and the Future of Enterprise Software
+          - generic [ref=e89]: a16z Podcast
+        - generic [ref=e90] [cursor=pointer]:
+          - generic [ref=e93]: "Inside the AI arms race: who is winning?"
+          - generic [ref=e94]: Hard Fork
+  - tablist [ref=e97]:
+    - tab "Home" [selected] [ref=e99] [cursor=pointer]:
+      - generic [ref=e100]:
+        - img [ref=e102]
+        - img [ref=e105]
+      - generic [ref=e107]: Home
+    - tab "Library" [ref=e109] [cursor=pointer]:
+      - generic [ref=e110]:
+        - img [ref=e112]
+        - img [ref=e116]
+      - generic [ref=e119]: Library
+    - tab "Feed" [ref=e121] [cursor=pointer]:
+      - generic [ref=e122]:
+        - img [ref=e124]
+        - img [ref=e129]
+      - generic [ref=e133]: Feed
+    - tab "Podcasts" [ref=e135] [cursor=pointer]:
+      - generic [ref=e136]:
+        - img [ref=e138]
+        - img [ref=e143]
+      - generic [ref=e147]: Podcasts
+    - tab "Account" [ref=e149] [cursor=pointer]:
+      - generic [ref=e150]:
+        - img [ref=e152]
+        - img [ref=e156]
+      - generic [ref=e159]: Account

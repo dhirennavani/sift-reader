@@ -1,0 +1,265 @@
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Home
+        - generic [ref=e17]:
+          - generic [ref=e19]:
+            - img [ref=e20]
+            - generic [ref=e25]: Continue reading
+          - generic [ref=e31]:
+            - generic [ref=e32] [cursor=pointer]:
+              - generic [ref=e35]: In defense of not reading the code
+              - generic [ref=e36]: Ben Shoemaker
+            - generic [ref=e37] [cursor=pointer]:
+              - generic [ref=e40]: "Thread: Why most developer tools fail"
+              - generic [ref=e41]: Boris Cherny
+            - generic [ref=e42] [cursor=pointer]:
+              - generic [ref=e45]: "The Software Shakeout: What Is Durable and What Will Be Swept Away?"
+              - generic [ref=e46]: Dan Hockenmaier
+            - generic [ref=e47] [cursor=pointer]:
+              - generic [ref=e50]: Application-Centric AI Evals For Engineers and Technical PMs
+              - generic [ref=e51]: Shreya Shankar
+            - generic [ref=e52] [cursor=pointer]:
+              - generic [ref=e55]: Attention Is All You Need - Transformer Architecture
+              - generic [ref=e56]: Vaswani et al.
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - img [ref=e60]
+            - generic [ref=e64]: Continue listening
+          - generic [ref=e69]:
+            - generic [ref=e70] [cursor=pointer]:
+              - generic [ref=e73]: "Head of Claude Code: What happens after coding is solved?"
+              - generic [ref=e74]: Lenny's Podcast
+            - generic [ref=e75] [cursor=pointer]:
+              - generic [ref=e78]: "Sam Altman: OpenAI, GPT-5, Superintelligence"
+              - generic [ref=e79]: Lex Fridman Podcast
+            - generic [ref=e80] [cursor=pointer]:
+              - generic [ref=e83]: "Conviction vs. Permission: Why Most Founders Stay Broke"
+              - generic [ref=e84]: My First Million
+            - generic [ref=e85] [cursor=pointer]:
+              - generic [ref=e88]: AI and the Future of Enterprise Software
+              - generic [ref=e89]: a16z Podcast
+            - generic [ref=e90] [cursor=pointer]:
+              - generic [ref=e93]: "Inside the AI arms race: who is winning?"
+              - generic [ref=e94]: Hard Fork
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - img [ref=e170] [cursor=pointer]
+          - generic [ref=e171]: Unread 6
+          - generic [ref=e172]:
+            - img [ref=e174] [cursor=pointer]
+            - img [ref=e176] [cursor=pointer]
+        - generic [ref=e181]:
+          - generic [ref=e183] [cursor=pointer]:
+            - generic [ref=e184]:
+              - img [ref=e187]
+              - generic [ref=e190]: BEN SHOEMAKER
+              - img [ref=e192]
+            - generic [ref=e197]:
+              - generic [ref=e198]: In defense of not reading the code
+              - generic [ref=e199]:
+                - generic [ref=e200]: benshoemaker.us
+                - generic [ref=e202]: 4 min
+                - generic [ref=e204]: 2 hours ago
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic [ref=e216]: BORIS CHERNY
+              - img [ref=e218]
+            - generic [ref=e223]:
+              - generic [ref=e224]: "Thread: Why most developer tools fail"
+              - generic [ref=e225]:
+                - generic [ref=e226]: Twitter
+                - generic [ref=e228]: 2 min
+                - generic [ref=e230]: 3 hours ago
+          - generic [ref=e236] [cursor=pointer]:
+            - generic [ref=e237]:
+              - img [ref=e240]
+              - generic [ref=e243]: DAN HOCKENMAIER
+              - img [ref=e245]
+            - generic [ref=e250]:
+              - generic [ref=e251]: "The Software Shakeout: What Is Durable and What Will Be Swept Away?"
+              - generic [ref=e252]:
+                - generic [ref=e253]: Dan Hock's Essays
+                - generic [ref=e255]: 6 min
+                - generic [ref=e257]: 5 hours ago
+          - generic [ref=e263] [cursor=pointer]:
+            - generic [ref=e264]:
+              - img [ref=e267]
+              - generic [ref=e270]: SHREYA SHANKAR
+              - img [ref=e272]
+            - generic [ref=e277]:
+              - generic [ref=e278]: Application-Centric AI Evals For Engineers and Technical PMs
+              - generic [ref=e279]:
+                - generic [ref=e280]: readwise.io
+                - generic [ref=e282]: 17 min
+                - generic [ref=e284]: Yesterday
+          - generic [ref=e290] [cursor=pointer]:
+            - generic [ref=e291]:
+              - img [ref=e294]
+              - generic [ref=e297]: VASWANI ET AL.
+              - img [ref=e299]
+            - generic [ref=e304]:
+              - generic [ref=e305]: Attention Is All You Need - Transformer Architecture
+              - generic [ref=e306]:
+                - generic [ref=e307]: arxiv.org
+                - generic [ref=e309]: 45 min
+                - generic [ref=e311]: 4 days ago
+          - generic [ref=e317] [cursor=pointer]:
+            - generic [ref=e318]:
+              - img [ref=e321]
+              - generic [ref=e324]: LUCA ROSSI
+              - img [ref=e326]
+            - generic [ref=e331]:
+              - generic [ref=e332]: "The end of the Copilot era: Why agentic AI changes everything"
+              - generic [ref=e333]:
+                - generic [ref=e334]: Refactoring
+                - generic [ref=e336]: 8 min
+                - generic [ref=e338]: 5 days ago
+        - generic [ref=e342]:
+          - generic [ref=e344] [cursor=pointer]: Unread
+          - generic [ref=e346] [cursor=pointer]: Read
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - img [ref=e357] [cursor=pointer]
+          - generic [ref=e358]: Unseen 6
+          - generic [ref=e359]:
+            - img [ref=e361] [cursor=pointer]
+            - img [ref=e363] [cursor=pointer]
+        - generic [ref=e368]:
+          - generic [ref=e369] [cursor=pointer]:
+            - generic [ref=e370]:
+              - generic [ref=e373]: DSMITH
+              - img [ref=e375]
+            - generic [ref=e379]: "Show HN: I built a tool to generate API docs from code"
+            - generic [ref=e380]:
+              - generic [ref=e381]: 2h
+              - generic [ref=e383]: github.com
+              - generic [ref=e385]: Hacker News - Top
+          - generic [ref=e386] [cursor=pointer]:
+            - generic [ref=e387]:
+              - generic [ref=e390]: DRH
+              - img [ref=e392]
+            - generic [ref=e396]: Why SQLite is so fast (2024)
+            - generic [ref=e397]:
+              - generic [ref=e398]: 4h
+              - generic [ref=e400]: sqlite.org
+              - generic [ref=e402]: Hacker News - Top
+          - generic [ref=e403] [cursor=pointer]:
+            - generic [ref=e404]:
+              - generic [ref=e407]: KATE CLARK
+              - img [ref=e409]
+            - generic [ref=e413]: AI startup raises $200M to build next-gen coding tools
+            - generic [ref=e414]:
+              - generic [ref=e415]: 1h
+              - generic [ref=e417]: techcrunch.com
+              - generic [ref=e419]: TechCrunch
+          - generic [ref=e420] [cursor=pointer]:
+            - generic [ref=e421]:
+              - generic [ref=e424]: BRIAN HEATER
+              - img [ref=e426]
+            - generic [ref=e430]: Apple announces new developer tools at WWDC
+            - generic [ref=e431]:
+              - generic [ref=e432]: 3h
+              - generic [ref=e434]: techcrunch.com
+              - generic [ref=e436]: TechCrunch
+          - generic [ref=e437] [cursor=pointer]:
+            - generic [ref=e438]:
+              - generic [ref=e441]: NETFLIX ENG
+              - img [ref=e443]
+            - generic [ref=e447]: How we scaled our recommendation engine to 300M users
+            - generic [ref=e448]:
+              - generic [ref=e449]: 1d
+              - generic [ref=e451]: netflixtechblog.com
+              - generic [ref=e453]: Netflix Tech Blog
+          - generic [ref=e454] [cursor=pointer]:
+            - generic [ref=e455]:
+              - generic [ref=e458]: GERGELY OROSZ
+              - img [ref=e460]
+            - generic [ref=e464]: "Inside the AI hiring boom: what companies actually look for"
+            - generic [ref=e465]:
+              - generic [ref=e466]: 8h
+              - generic [ref=e468]: pragmaticengineer.com
+              - generic [ref=e470]: The Pragmatic Engineer
+        - generic [ref=e472]:
+          - generic [ref=e474] [cursor=pointer]: Unseen
+          - generic [ref=e476] [cursor=pointer]: Seen
+    - tablist [ref=e97]:
+      - tab "Home" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]:
+          - img [ref=e102]
+          - img [ref=e105]
+        - generic [ref=e107]: Home
+      - tab "Library" [selected] [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]:
+          - img [ref=e112]
+          - img [ref=e116]
+        - generic [ref=e119]: Library
+      - tab "Feed" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]:
+          - img [ref=e124]
+          - img [ref=e129]
+        - generic [ref=e133]: Feed
+      - tab "Podcasts" [ref=e135] [cursor=pointer]:
+        - generic [ref=e136]:
+          - img [ref=e138]
+          - img [ref=e143]
+        - generic [ref=e147]: Podcasts
+      - tab "Account" [ref=e149] [cursor=pointer]:
+        - generic [ref=e150]:
+          - img [ref=e152]
+          - img [ref=e156]
+        - generic [ref=e159]: Account
+  - dialog [ref=e478]:
+    - generic [ref=e485]:
+      - generic [ref=e486] [cursor=pointer]:
+        - img [ref=e487]
+        - generic [ref=e489]: Library
+      - generic [ref=e490] [cursor=pointer]:
+        - generic [ref=e491]: Types
+        - img [ref=e492]
+      - generic [ref=e494]:
+        - generic [ref=e495] [cursor=pointer]:
+          - img [ref=e496]
+          - generic [ref=e499]: Articles
+        - generic [ref=e500] [cursor=pointer]:
+          - img [ref=e501]
+          - generic [ref=e503]: Books
+        - generic [ref=e504] [cursor=pointer]:
+          - img [ref=e505]
+          - generic [ref=e508]: Emails
+        - generic [ref=e509] [cursor=pointer]:
+          - img [ref=e510]
+          - generic [ref=e513]: PDFs
+        - generic [ref=e514] [cursor=pointer]:
+          - img [ref=e515]
+          - generic [ref=e517]: Tweets
+        - generic [ref=e518] [cursor=pointer]:
+          - img [ref=e519]
+          - generic [ref=e522]: Videos
+        - generic [ref=e523] [cursor=pointer]:
+          - img [ref=e524]
+          - generic [ref=e526]: Podcasts
+      - generic [ref=e527] [cursor=pointer]:
+        - generic [ref=e528]: Tags
+        - img [ref=e529]
+      - generic [ref=e531]:
+        - generic [ref=e532]:
+          - img [ref=e533]
+          - textbox "Find tag" [ref=e536]
+        - generic [ref=e537] [cursor=pointer]:
+          - img [ref=e538]
+          - generic [ref=e541]: AI Industry
+        - generic [ref=e542] [cursor=pointer]:
+          - img [ref=e543]
+          - generic [ref=e546]: AI Productivity
+        - generic [ref=e547] [cursor=pointer]:
+          - img [ref=e548]
+          - generic [ref=e551]: Engineering
+        - generic [ref=e552] [cursor=pointer]:
+          - img [ref=e553]
+          - generic [ref=e556]: Design
+        - generic [ref=e557] [cursor=pointer]:
+          - img [ref=e558]
+          - generic [ref=e561]: Product

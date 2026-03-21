@@ -1,0 +1,10 @@
+- generic [ref=e266]:
+  - generic [ref=e267] [cursor=pointer]:
+    - generic [ref=e268]: In defense of not reading the code
+    - generic [ref=e269]: Ben Shoemaker · benshoemaker.us · Mar 10, 2026
+  - generic [ref=e271] [cursor=pointer]: There is a pervasive belief in software engineering that reading code is an essential skill. We are told that great engineers read code voraciously, that understanding a codebase requires reading every line, and that code review means carefully parsing each diff.
+  - generic [ref=e273] [cursor=pointer]: I want to push back on this idea. Not because reading code is unimportant, but because we have elevated it to a status it does not deserve. Reading code is a tool, not a virtue.
+  - generic [ref=e275] [cursor=pointer]: The best engineers I have worked with do not read code line by line. They build mental models. They understand systems at the architectural level first, then dive into specifics only when needed. They ask questions before they read. They form hypotheses and test them.
+  - generic [ref=e277] [cursor=pointer]: "When you sit down to understand a new codebase, resist the urge to start reading from the top of main.ts. Instead, ask yourself: what does this system do? What are its inputs and outputs? What are the key abstractions?"
+  - generic [ref=e279] [cursor=pointer]: Once you have a mental model, reading code becomes targeted. You know where to look. You know what matters and what is incidental complexity. You can skip the boilerplate and focus on the interesting parts.
+  - generic [ref=e281] [cursor=pointer]: This approach is not just more efficient — it leads to deeper understanding. When you read code with a model in mind, you notice when reality diverges from your expectations. Those divergences are where the bugs live, where the design decisions matter.

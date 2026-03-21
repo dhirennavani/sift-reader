@@ -1,0 +1,123 @@
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - img [ref=e20] [cursor=pointer]
+        - generic [ref=e21]: Unseen 6
+        - generic [ref=e22]:
+          - img [ref=e24] [cursor=pointer]
+          - img [ref=e26] [cursor=pointer]
+      - generic [ref=e31]:
+        - generic [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]:
+            - generic [ref=e36]: DSMITH
+            - img [ref=e38]
+          - generic [ref=e42]: "Show HN: I built a tool to generate API docs from code"
+          - generic [ref=e43]:
+            - generic [ref=e44]: 2h
+            - generic [ref=e46]: github.com
+            - generic [ref=e48]: Hacker News - Top
+        - generic [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]:
+            - generic [ref=e53]: DRH
+            - img [ref=e55]
+          - generic [ref=e59]: Why SQLite is so fast (2024)
+          - generic [ref=e60]:
+            - generic [ref=e61]: 4h
+            - generic [ref=e63]: sqlite.org
+            - generic [ref=e65]: Hacker News - Top
+        - generic [ref=e66] [cursor=pointer]:
+          - generic [ref=e67]:
+            - generic [ref=e70]: KATE CLARK
+            - img [ref=e72]
+          - generic [ref=e76]: AI startup raises $200M to build next-gen coding tools
+          - generic [ref=e77]:
+            - generic [ref=e78]: 1h
+            - generic [ref=e80]: techcrunch.com
+            - generic [ref=e82]: TechCrunch
+        - generic [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]:
+            - generic [ref=e87]: BRIAN HEATER
+            - img [ref=e89]
+          - generic [ref=e93]: Apple announces new developer tools at WWDC
+          - generic [ref=e94]:
+            - generic [ref=e95]: 3h
+            - generic [ref=e97]: techcrunch.com
+            - generic [ref=e99]: TechCrunch
+        - generic [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]:
+            - generic [ref=e104]: NETFLIX ENG
+            - img [ref=e106]
+          - generic [ref=e110]: How we scaled our recommendation engine to 300M users
+          - generic [ref=e111]:
+            - generic [ref=e112]: 1d
+            - generic [ref=e114]: netflixtechblog.com
+            - generic [ref=e116]: Netflix Tech Blog
+        - generic [ref=e117] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e121]: GERGELY OROSZ
+            - img [ref=e123]
+          - generic [ref=e127]: "Inside the AI hiring boom: what companies actually look for"
+          - generic [ref=e128]:
+            - generic [ref=e129]: 8h
+            - generic [ref=e131]: pragmaticengineer.com
+            - generic [ref=e133]: The Pragmatic Engineer
+      - generic [ref=e135]:
+        - generic [ref=e137] [cursor=pointer]: Unseen
+        - generic [ref=e139] [cursor=pointer]: Seen
+    - tablist [ref=e141]:
+      - tab "Home" [ref=e143] [cursor=pointer]:
+        - generic [ref=e144]:
+          - img [ref=e146]
+          - img [ref=e149]
+        - generic [ref=e151]: Home
+      - tab "Library" [ref=e153] [cursor=pointer]:
+        - generic [ref=e154]:
+          - img [ref=e156]
+          - img [ref=e160]
+        - generic [ref=e163]: Library
+      - tab "Feed" [selected] [ref=e165] [cursor=pointer]:
+        - generic [ref=e166]:
+          - img [ref=e168]
+          - img [ref=e173]
+        - generic [ref=e177]: Feed
+      - tab "Podcasts" [ref=e179] [cursor=pointer]:
+        - generic [ref=e180]:
+          - img [ref=e182]
+          - img [ref=e187]
+        - generic [ref=e191]: Podcasts
+      - tab "Account" [ref=e193] [cursor=pointer]:
+        - generic [ref=e194]:
+          - img [ref=e196]
+          - img [ref=e200]
+        - generic [ref=e203]: Account
+  - dialog [ref=e205]:
+    - generic [ref=e212]:
+      - generic [ref=e213]: Browse
+      - generic [ref=e215] [cursor=pointer]:
+        - img [ref=e216]
+        - generic [ref=e220]: Feed
+      - generic [ref=e222] [cursor=pointer]:
+        - img [ref=e223]
+        - generic [ref=e225]: Tech News
+        - generic [ref=e226]: "4"
+        - img [ref=e228]
+      - generic [ref=e231] [cursor=pointer]:
+        - img [ref=e232]
+        - generic [ref=e234]: Engineering Blogs
+        - generic [ref=e235]: "1"
+        - img [ref=e237]
+      - generic [ref=e240] [cursor=pointer]:
+        - img [ref=e241]
+        - generic [ref=e243]: Newsletters
+        - generic [ref=e244]: "1"
+        - img [ref=e246]
+      - generic [ref=e248]: All feeds
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - img [ref=e251]
+          - textbox "Find feed" [ref=e254]
+        - generic [ref=e257] [cursor=pointer]: Hacker News - Top
+        - generic [ref=e260] [cursor=pointer]: TechCrunch
+        - generic [ref=e263] [cursor=pointer]: Netflix Tech Blog
+        - generic [ref=e266] [cursor=pointer]: The Pragmatic Engineer
