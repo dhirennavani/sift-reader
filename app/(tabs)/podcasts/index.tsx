@@ -7,6 +7,7 @@ import { SectionHeader } from '../../../components/SectionHeader';
 import { ContinueListeningCard } from '../../../components/ContinueListeningCard';
 import { PodcastSquareCard } from '../../../components/PodcastSquareCard';
 import { SketchHeadphone } from '../../../components/HandDrawnIcons';
+import { usePlayback } from '../../../context/PlaybackContext';
 import { subscribedPodcasts, discoverPodcasts, groupPodcastsByCategory } from '../../../data/podcasts';
 import { colors, typography, fontSize, spacing, radius } from '../../../constants/theme';
 
@@ -14,6 +15,7 @@ type PodcastTab = 'library' | 'discover';
 
 function PodcastLibraryView() {
   const router = useRouter();
+  const { setEpisode } = usePlayback();
 
   const inProgressEpisodes = subscribedPodcasts
     .flatMap((p) =>
@@ -49,9 +51,12 @@ function PodcastLibraryView() {
                 podcastTitle={item.podcastTitle}
                 progress={item.progress}
                 remaining={item.remaining}
-                onPress={() =>
-                  router.push({ pathname: '/(tabs)/podcasts/player', params: { podcastId: item.podcastId, episodeId: item.id } })
-                }
+                onPress={() => {
+                  const p = subscribedPodcasts.find((pod) => pod.id === item.podcastId);
+                  const e = p?.episodes.find((ep) => ep.id === item.id);
+                  if (p && e) setEpisode(p, e);
+                  router.push({ pathname: '/(tabs)/podcasts/player', params: { podcastId: item.podcastId, episodeId: item.id } });
+                }}
               />
             ))}
           </ScrollView>

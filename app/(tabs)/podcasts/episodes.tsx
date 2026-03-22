@@ -33,7 +33,7 @@ export default function EpisodeListScreen() {
               key={episode.id}
               style={styles.episodeRow}
               activeOpacity={0.7}
-              onPress={() => router.push({ pathname: '/(tabs)/podcasts/player', params: { podcastId: podcast.id, episodeId: episode.id } })}
+              onPress={() => router.push({ pathname: '/(tabs)/podcasts/episode-details', params: { podcastId: podcast.id, episodeId: episode.id } })}
             >
               <View style={styles.playButton}>
                 <Play size={16} color={colors.accent} fill={colors.accent} strokeWidth={1.2} />

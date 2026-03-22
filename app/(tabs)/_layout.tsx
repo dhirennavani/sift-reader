@@ -1,5 +1,6 @@
 import { Tabs } from 'expo-router';
-import { StyleSheet, Platform } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
+import { BottomTabBar } from '@react-navigation/bottom-tabs';
 import { colors, typography } from '../../constants/theme';
 import {
   SketchHome,
@@ -8,10 +9,17 @@ import {
   SketchHeadphones,
   SketchUser,
 } from '../../components/HandDrawnIcons';
+import { MiniPlayer } from '../../components/MiniPlayer';
 
 export default function TabLayout() {
   return (
     <Tabs
+      tabBar={(props) => (
+        <View>
+          <MiniPlayer />
+          <BottomTabBar {...props} />
+        </View>
+      )}
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: colors.tabActive,

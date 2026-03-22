@@ -5,6 +5,7 @@ export interface Episode {
   publishedAt: string;
   progress: number;
   remaining: string;
+  description?: string;
 }
 
 export interface Podcast {
@@ -25,7 +26,7 @@ export const subscribedPodcasts: Podcast[] = [
     coverImage: 'https://images.pexels.com/photos/7367/startup-photos.jpg?auto=compress&cs=tinysrgb&w=400',
     category: 'Business',
     episodes: [
-      { id: 'e1', title: 'Head of Claude Code: What happens after coding is solved?', duration: '54 min', publishedAt: '2 days ago', progress: 45, remaining: '17 min left' },
+      { id: 'e1', title: 'Head of Claude Code: What happens after coding is solved?', duration: '54 min', publishedAt: '2 days ago', progress: 45, remaining: '17 min left', description: 'Boris Power, head of Claude Code at Anthropic, joins Lenny to discuss how AI is transforming the role of software engineers. They explore what happens when writing code is no longer the bottleneck, and how the best engineers are shifting toward systems thinking and problem understanding.' },
       { id: 'e2', title: 'How Notion built a $10B company with product-led growth', duration: '1h 12 min', publishedAt: '1 week ago', progress: 0, remaining: '' },
     ],
   },
@@ -36,7 +37,7 @@ export const subscribedPodcasts: Podcast[] = [
     coverImage: 'https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=400',
     category: 'Science',
     episodes: [
-      { id: 'e3', title: 'Sam Altman: OpenAI, GPT-5, Superintelligence', duration: '2h 14 min', publishedAt: '3 days ago', progress: 20, remaining: '1h 22 min left' },
+      { id: 'e3', title: 'Sam Altman: OpenAI, GPT-5, Superintelligence', duration: '2h 14 min', publishedAt: '3 days ago', progress: 20, remaining: '1h 22 min left', description: 'Sam Altman returns to discuss the path to GPT-5, the challenges of building superintelligent systems, and his vision for how AI will reshape society. A wide-ranging conversation on safety, competition, and the future of intelligence.' },
     ],
   },
   {
@@ -46,7 +47,7 @@ export const subscribedPodcasts: Podcast[] = [
     coverImage: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
     category: 'Business',
     episodes: [
-      { id: 'e4', title: 'Conviction vs. Permission: Why Most Founders Stay Broke', duration: '58 min', publishedAt: '1 day ago', progress: 70, remaining: '18 min left' },
+      { id: 'e4', title: 'Conviction vs. Permission: Why Most Founders Stay Broke', duration: '58 min', publishedAt: '1 day ago', progress: 70, remaining: '18 min left', description: 'Sam and Shaan break down why most founders wait for permission instead of acting on conviction, and how the most successful entrepreneurs bet on themselves before anyone else does.' },
     ],
   },
   {
@@ -66,7 +67,7 @@ export const subscribedPodcasts: Podcast[] = [
     coverImage: 'https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=400',
     category: 'Technology',
     episodes: [
-      { id: 'e6', title: 'Inside the AI arms race: who is winning?', duration: '1h 02 min', publishedAt: '2 days ago', progress: 60, remaining: '24 min left' },
+      { id: 'e6', title: 'Inside the AI arms race: who is winning?', duration: '1h 02 min', publishedAt: '2 days ago', progress: 60, remaining: '24 min left', description: 'Kevin and Casey dig into the escalating competition between AI labs, examining who is pulling ahead, what strategies are working, and whether the race is helping or hurting the technology.' },
     ],
   },
   {

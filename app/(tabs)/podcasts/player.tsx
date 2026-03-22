@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Image, Platform } from 'react-native';
-import { Play, Pause, SkipBack, SkipForward } from 'lucide-react-native';
+import { Play, Pause, SkipBack, SkipForward, Share2, Download, Moon } from 'lucide-react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { TopBar } from '../../../components/TopBar';
 import { HighlightToolbar } from '../../../components/HighlightToolbar';
+import { SleepTimerSheet } from '../../../components/SleepTimerSheet';
+import { usePlayback, PLAYBACK_SPEEDS } from '../../../context/PlaybackContext';
 import { subscribedPodcasts } from '../../../data/podcasts';
 import { sampleTranscript } from '../../../data/transcript';
 import { colors, typography, fontSize, spacing, radius } from '../../../constants/theme';
@@ -11,14 +13,49 @@ import { colors, typography, fontSize, spacing, radius } from '../../../constant
 export default function PodcastPlayerScreen() {
   const { podcastId, episodeId } = useLocalSearchParams<{ podcastId: string; episodeId: string }>();
   const router = useRouter();
-  const podcast = subscribedPodcasts.find((p) => p.id === podcastId) || subscribedPodcasts[0];
-  const episode = podcast.episodes.find((e) => e.id === episodeId) || podcast.episodes[0];
+  const playback = usePlayback();
+  const scrollRef = useRef<ScrollView>(null);
+  const segmentRefs = useRef<Record<string, number>>({});
 
-  const [isPlaying, setIsPlaying] = useState(false);
+  // Resolve podcast/episode from context or params (deep link fallback)
+  const podcast = playback.currentPodcast || subscribedPodcasts.find((p) => p.id === podcastId) || subscribedPodcasts[0];
+  const episode = playback.currentEpisode || podcast.episodes.find((e) => e.id === episodeId) || podcast.episodes[0];
+
+  // On mount, if context has no episode but params exist, set episode in context
+  useEffect(() => {
+    if (!playback.currentEpisode && podcastId && episodeId) {
+      const p = subscribedPodcasts.find((p) => p.id === podcastId);
+      const e = p?.episodes.find((e) => e.id === episodeId);
+      if (p && e) {
+        playback.setEpisode(p, e);
+      }
+    }
+  }, []);
+
+  const progress = playback.currentEpisode ? playback.progress : episode.progress;
+  const isPlaying = playback.isPlaying;
+
   const [highlightedSegments, setHighlightedSegments] = useState<Set<string>>(
     new Set(sampleTranscript.filter((s) => s.isHighlighted).map((s) => s.id))
   );
   const [toolbarSegment, setToolbarSegment] = useState<string | null>(null);
+  const [showSleepTimer, setShowSleepTimer] = useState(false);
+
+  // Determine active transcript segment based on progress
+  const totalSegments = sampleTranscript.length;
+  const activeSegmentIndex = Math.min(
+    Math.floor((progress / 100) * totalSegments),
+    totalSegments - 1
+  );
+  const activeSegmentId = sampleTranscript[activeSegmentIndex]?.id;
+
+  // Auto-scroll to active segment
+  useEffect(() => {
+    const y = segmentRefs.current[activeSegmentId];
+    if (y !== undefined && scrollRef.current) {
+      scrollRef.current.scrollTo({ y: y - 200, animated: true });
+    }
+  }, [activeSegmentId]);
 
   const handleHighlight = () => {
     if (toolbarSegment) {
@@ -32,11 +69,36 @@ export default function PodcastPlayerScreen() {
     }
   };
 
+  const handleSegmentSeek = (index: number) => {
+    const newProgress = (index / totalSegments) * 100;
+    playback.setProgress(newProgress);
+  };
+
+  const cycleSpeed = () => {
+    const currentIndex = PLAYBACK_SPEEDS.indexOf(playback.playbackSpeed);
+    const nextIndex = (currentIndex + 1) % PLAYBACK_SPEEDS.length;
+    playback.setSpeed(PLAYBACK_SPEEDS[nextIndex]);
+  };
+
   return (
     <View style={styles.container}>
-      <TopBar title="Now Playing" showBack onBack={() => router.back()} />
+      <TopBar
+        title="Now Playing"
+        showBack
+        onBack={() => router.back()}
+        rightActions={
+          <>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Share2 size={20} color={colors.textPrimary} strokeWidth={1.2} />
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Download size={20} color={colors.textPrimary} strokeWidth={1.2} />
+            </TouchableOpacity>
+          </>
+        }
+      />
 
-      <ScrollView style={styles.content} contentContainerStyle={styles.contentContainer}>
+      <ScrollView ref={scrollRef} style={styles.content} contentContainerStyle={styles.contentContainer}>
         <View style={styles.episodeHeader}>
           <Image source={{ uri: podcast.coverImage }} style={styles.artwork} />
           <Text style={styles.episodeTitle}>{episode.title}</Text>
@@ -45,23 +107,23 @@ export default function PodcastPlayerScreen() {
 
         <View style={styles.playerControls}>
           <View style={styles.progressBar}>
-            <View style={[styles.progressFill, { width: `${episode.progress}%` }]} />
+            <View style={[styles.progressFill, { width: `${progress}%` }]} />
           </View>
           <View style={styles.timeRow}>
             <Text style={styles.timeText}>
-              {Math.floor(episode.progress * 0.54)}:00
+              {Math.floor(progress * 0.54)}:00
             </Text>
             <Text style={styles.timeText}>{episode.duration}</Text>
           </View>
           <View style={styles.controls}>
-            <TouchableOpacity style={styles.skipButton} activeOpacity={0.7}>
+            <TouchableOpacity style={styles.skipButton} activeOpacity={0.7} onPress={playback.skipBack}>
               <SkipBack size={24} color={colors.textPrimary} strokeWidth={1.2} />
               <Text style={styles.skipLabel}>15</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.playPauseButton}
               activeOpacity={0.8}
-              onPress={() => setIsPlaying(!isPlaying)}
+              onPress={playback.toggle}
             >
               {isPlaying ? (
                 <Pause size={28} color={colors.background} fill={colors.background} strokeWidth={1.2} />
@@ -69,32 +131,63 @@ export default function PodcastPlayerScreen() {
                 <Play size={28} color={colors.background} fill={colors.background} strokeWidth={1.2} />
               )}
             </TouchableOpacity>
-            <TouchableOpacity style={styles.skipButton} activeOpacity={0.7}>
+            <TouchableOpacity style={styles.skipButton} activeOpacity={0.7} onPress={playback.skipForward}>
               <SkipForward size={24} color={colors.textPrimary} strokeWidth={1.2} />
               <Text style={styles.skipLabel}>15</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.extraControls}>
+            <TouchableOpacity style={styles.speedPill} activeOpacity={0.7} onPress={cycleSpeed}>
+              <Text style={styles.speedText}>{playback.playbackSpeed}x</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.sleepButton}
+              activeOpacity={0.7}
+              onPress={() => setShowSleepTimer(true)}
+            >
+              <Moon
+                size={18}
+                color={playback.sleepTimer ? colors.accent : colors.textTertiary}
+                strokeWidth={1.2}
+              />
             </TouchableOpacity>
           </View>
         </View>
 
         <View style={styles.transcriptSection}>
           <Text style={styles.transcriptTitle}>Transcript</Text>
-          {sampleTranscript.map((segment) => (
-            <TouchableOpacity
-              key={segment.id}
-              style={[
-                styles.segment,
-                highlightedSegments.has(segment.id) && styles.segmentHighlighted,
-              ]}
-              activeOpacity={0.8}
-              onLongPress={() => setToolbarSegment(segment.id)}
-              delayLongPress={400}
-            >
-              <Text style={styles.timestamp}>{segment.startTime}</Text>
-              <Text style={styles.segmentText}>
-                {segment.text}
-              </Text>
-            </TouchableOpacity>
-          ))}
+          {sampleTranscript.map((segment, index) => {
+            const isActive = segment.id === activeSegmentId;
+            const isHighlighted = highlightedSegments.has(segment.id);
+            return (
+              <TouchableOpacity
+                key={segment.id}
+                style={[
+                  styles.segment,
+                  isHighlighted && styles.segmentHighlighted,
+                  isActive && styles.segmentActive,
+                ]}
+                activeOpacity={0.8}
+                onPress={() => handleSegmentSeek(index)}
+                onLongPress={() => setToolbarSegment(segment.id)}
+                delayLongPress={400}
+                onLayout={(e) => {
+                  segmentRefs.current[segment.id] = e.nativeEvent.layout.y;
+                }}
+              >
+                <View style={styles.segmentLeft}>
+                  <Text style={styles.timestamp}>{segment.startTime}</Text>
+                  {segment.speaker && (
+                    <Text style={styles.speakerLabel}>{segment.speaker}</Text>
+                  )}
+                </View>
+                <Text style={styles.segmentText}>
+                  {segment.text}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
         </View>
 
         <View style={{ height: 120 }} />
@@ -106,10 +199,17 @@ export default function PodcastPlayerScreen() {
             onHighlight={handleHighlight}
             onAddNote={() => setToolbarSegment(null)}
             onTag={() => setToolbarSegment(null)}
-            onCopy={() => setToolbarSegment(null)}
+            onClose={() => setToolbarSegment(null)}
           />
         </View>
       )}
+
+      <SleepTimerSheet
+        visible={showSleepTimer}
+        currentTimer={playback.sleepTimer}
+        onSelect={playback.setSleepTimer}
+        onClose={() => setShowSleepTimer(false)}
+      />
     </View>
   );
 }
@@ -166,6 +266,28 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 6,
   },
+  extraControls: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 20,
+    marginTop: spacing.xl,
+  },
+  speedPill: {
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radius.sm,
+  },
+  speedText: {
+    fontFamily: typography.rounded,
+    fontSize: fontSize.xs,
+    fontWeight: '400',
+    color: colors.textPrimary,
+  },
+  sleepButton: {
+    padding: spacing.xs,
+  },
   transcriptSection: {
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: colors.hairline,
@@ -178,15 +300,37 @@ const styles = StyleSheet.create({
     color: colors.textPrimary,
     marginBottom: spacing.lg,
   },
-  segment: { flexDirection: 'row', gap: spacing.md, paddingVertical: spacing.sm + 2, paddingHorizontal: spacing.sm, borderRadius: radius.sm },
+  segment: {
+    flexDirection: 'row',
+    gap: spacing.md,
+    paddingVertical: spacing.sm + 2,
+    paddingHorizontal: spacing.sm,
+    borderRadius: radius.sm,
+    borderLeftWidth: 2,
+    borderLeftColor: 'transparent',
+  },
   segmentHighlighted: { backgroundColor: colors.highlight },
+  segmentActive: {
+    borderLeftColor: colors.accent,
+  },
+  segmentLeft: {
+    width: 40,
+    paddingTop: spacing['2xs'],
+  },
+  speakerLabel: {
+    fontFamily: typography.rounded,
+    fontSize: fontSize['2xs'],
+    fontWeight: '500',
+    color: colors.accent,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+    marginTop: 2,
+  },
   timestamp: {
     fontFamily: typography.rounded,
     fontSize: fontSize['2xs'],
     fontWeight: '400',
     color: colors.textTertiary,
-    width: 40,
-    paddingTop: spacing['2xs'],
   },
   segmentText: {
     fontFamily: typography.serif,

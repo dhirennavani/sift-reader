@@ -67,7 +67,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   right: {
-    width: 40,
+    minWidth: 40,
     alignItems: 'flex-end',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    gap: 12,
   },
 });
